@@ -1,0 +1,18 @@
+#!/bin/sh
+        if test $# -eq 2
+        then
+                if test -f $1
+                then
+                        if test -d $2
+                        then
+                                echo "Katalogas jau egzistuoja"
+                        else
+                                mkdir $2
+                                mv $1 $2/
+                        fi
+                fi
+        fi
+
+
+
+
